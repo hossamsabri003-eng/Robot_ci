@@ -1,58 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.11.3 on win32)" generated="2026-02-21T14:00:19.973252" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.11.3 on win32)" generated="2026-02-21T14:23:34.464493" rpa="false" schemaversion="5">
 <suite id="s1" name="Robot CI" source="C:\Users\HOUSSAM SABRI\Robot_CI">
 <suite id="s1-s1" name="Test Calc" source="C:\Users\HOUSSAM SABRI\Robot_CI\test_calc.robot">
-<test id="s1-s1-t1" name="Test Addition" line="5">
+<test id="s1-s1-t1" name="Addition Test" line="5">
 <kw name="Add" owner="calcc">
-<msg time="2026-02-21T14:00:20.084182" level="INFO">${result1} = 5</msg>
-<var>${result1}</var>
+<msg time="2026-02-21T14:23:34.538205" level="INFO">${result} = 5</msg>
+<var>${result}</var>
 <arg>2</arg>
 <arg>3</arg>
-<status status="PASS" start="2026-02-21T14:00:20.082824" elapsed="0.001358"/>
+<status status="PASS" start="2026-02-21T14:23:34.537680" elapsed="0.000525"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-02-21T14:00:20.086578" level="INFO">Argument types are:
+<msg time="2026-02-21T14:23:34.539720" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<arg>${result1}</arg>
+<arg>${result}</arg>
 <arg>5</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-21T14:00:20.085573" elapsed="0.001005"/>
+<status status="PASS" start="2026-02-21T14:23:34.538205" elapsed="0.001515"/>
 </kw>
-<status status="PASS" start="2026-02-21T14:00:20.077631" elapsed="0.008947"/>
+<status status="PASS" start="2026-02-21T14:23:34.532509" elapsed="0.007982"/>
 </test>
-<test id="s1-s1-t2" name="Test Multiplication" line="9">
+<test id="s1-s1-t2" name="Subtraction Test" line="9">
+<kw name="Subtract" owner="calcc">
+<msg time="2026-02-21T14:23:34.554964" level="INFO">${result} = 3</msg>
+<var>${result}</var>
+<arg>5</arg>
+<arg>2</arg>
+<status status="PASS" start="2026-02-21T14:23:34.554295" elapsed="0.000986"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-02-21T14:23:34.556257" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>3</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-02-21T14:23:34.555281" elapsed="0.001476"/>
+</kw>
+<status status="PASS" start="2026-02-21T14:23:34.549583" elapsed="0.007174"/>
+</test>
+<test id="s1-s1-t3" name="Multiplication Test" line="13">
 <kw name="Multiply" owner="calcc">
-<msg time="2026-02-21T14:00:20.100352" level="INFO">${result2} = 50</msg>
-<var>${result2}</var>
-<arg>5</arg>
-<arg>10</arg>
-<status status="PASS" start="2026-02-21T14:00:20.100352" elapsed="0.001005"/>
+<msg time="2026-02-21T14:23:34.565054" level="INFO">${result} = 12</msg>
+<var>${result}</var>
+<arg>4</arg>
+<arg>3</arg>
+<status status="PASS" start="2026-02-21T14:23:34.564054" elapsed="0.001562"/>
 </kw>
 <kw name="Should Be Equal As Integers" owner="BuiltIn">
-<msg time="2026-02-21T14:00:20.102567" level="INFO">Argument types are:
+<msg time="2026-02-21T14:23:34.566655" level="INFO">Argument types are:
 &lt;class 'int'&gt;
 &lt;class 'str'&gt;</msg>
-<arg>${result2}</arg>
-<arg>50</arg>
+<arg>${result}</arg>
+<arg>12</arg>
 <doc>Fails if objects are unequal after converting them to integers.</doc>
-<status status="PASS" start="2026-02-21T14:00:20.101357" elapsed="0.001210"/>
+<status status="PASS" start="2026-02-21T14:23:34.565616" elapsed="0.001039"/>
 </kw>
-<status status="PASS" start="2026-02-21T14:00:20.096107" elapsed="0.007465"/>
+<status status="PASS" start="2026-02-21T14:23:34.558455" elapsed="0.008200"/>
 </test>
-<status status="PASS" start="2026-02-21T14:00:20.063004" elapsed="0.043972"/>
+<test id="s1-s1-t4" name="Division Test" line="17">
+<kw name="Divide" owner="calcc">
+<msg time="2026-02-21T14:23:34.583971" level="INFO">${result} = 5.0</msg>
+<var>${result}</var>
+<arg>10</arg>
+<arg>2</arg>
+<status status="PASS" start="2026-02-21T14:23:34.583971" elapsed="0.000000"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-02-21T14:23:34.583971" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result}</arg>
+<arg>5</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-02-21T14:23:34.583971" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-02-21T14:23:34.582381" elapsed="0.001590"/>
+</test>
+<status status="PASS" start="2026-02-21T14:23:34.520274" elapsed="0.078264"/>
 </suite>
-<status status="PASS" start="2026-02-21T14:00:19.987913" elapsed="0.123305"/>
+<status status="PASS" start="2026-02-21T14:23:34.476122" elapsed="0.125488"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Robot CI" id="s1" pass="2" fail="0" skip="0">Robot CI</stat>
-<stat name="Test Calc" id="s1-s1" pass="2" fail="0" skip="0">Robot CI.Test Calc</stat>
+<stat name="Robot CI" id="s1" pass="4" fail="0" skip="0">Robot CI</stat>
+<stat name="Test Calc" id="s1-s1" pass="4" fail="0" skip="0">Robot CI.Test Calc</stat>
 </suite>
 </statistics>
 <errors>
