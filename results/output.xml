@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.11.3 on win32)" generated="2026-02-21T14:00:19.973252" rpa="false" schemaversion="5">
+<suite id="s1" name="Robot CI" source="C:\Users\HOUSSAM SABRI\Robot_CI">
+<suite id="s1-s1" name="Test Calc" source="C:\Users\HOUSSAM SABRI\Robot_CI\test_calc.robot">
+<test id="s1-s1-t1" name="Test Addition" line="5">
+<kw name="Add" owner="calcc">
+<msg time="2026-02-21T14:00:20.084182" level="INFO">${result1} = 5</msg>
+<var>${result1}</var>
+<arg>2</arg>
+<arg>3</arg>
+<status status="PASS" start="2026-02-21T14:00:20.082824" elapsed="0.001358"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-02-21T14:00:20.086578" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result1}</arg>
+<arg>5</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-02-21T14:00:20.085573" elapsed="0.001005"/>
+</kw>
+<status status="PASS" start="2026-02-21T14:00:20.077631" elapsed="0.008947"/>
+</test>
+<test id="s1-s1-t2" name="Test Multiplication" line="9">
+<kw name="Multiply" owner="calcc">
+<msg time="2026-02-21T14:00:20.100352" level="INFO">${result2} = 50</msg>
+<var>${result2}</var>
+<arg>5</arg>
+<arg>10</arg>
+<status status="PASS" start="2026-02-21T14:00:20.100352" elapsed="0.001005"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2026-02-21T14:00:20.102567" level="INFO">Argument types are:
+&lt;class 'int'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${result2}</arg>
+<arg>50</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2026-02-21T14:00:20.101357" elapsed="0.001210"/>
+</kw>
+<status status="PASS" start="2026-02-21T14:00:20.096107" elapsed="0.007465"/>
+</test>
+<status status="PASS" start="2026-02-21T14:00:20.063004" elapsed="0.043972"/>
+</suite>
+<status status="PASS" start="2026-02-21T14:00:19.987913" elapsed="0.123305"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Robot CI" id="s1" pass="2" fail="0" skip="0">Robot CI</stat>
+<stat name="Test Calc" id="s1-s1" pass="2" fail="0" skip="0">Robot CI.Test Calc</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
